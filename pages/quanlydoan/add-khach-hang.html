@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>AdminLTE 3 | Dashboard 3</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../../dist/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+    </ul>
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-x-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6.146-2.854a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../../index3.html" class="brand-link">
+      <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">Quản lý tour</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item">
+            <a href="/pages/quanlytour/qltour.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Quản lý tour</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/quanlydiadiem/qldiadiem.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Quản lý địa điểm</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/quanlydoan/qldoan.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Quản lý đoàn</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/quanlynhanvien/ql.nhanvien.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Quản lý nhân viên</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/quanlykhachhang/qlkhackhang.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Quản lý khách hàng</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Thêm người đi</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+              <li class="breadcrumb-item active">Thêm người đi</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+    <section class="content">
+      <div class="container-fluid card">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 form_tour_">
+                <div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+                  <h3 class="text-danger">Gá tour cơ bản</h3>
+                </div>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Mã tour</th>
+                      <th scope="col">Giá tour</th>
+                      <th scope="col">Người lớn (Từ 12 tuổi trở lên)</th>
+                      <th scope="col">Trẻ em (Từ 5 tuổi đến dưới 12 tuổi</th>
+                      <th scope="col">Giá phòng khách sạn</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">HD001</th>
+                      <td>2.499.000 VNĐ</td>
+                      <td>2.499.000 VNĐ</td>
+                      <td>1.299.000 VNĐ</td>
+                      <td>1.000.000 VNĐ</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-12 form_tour_" style="padding: 20px;">
+                <div class="d-flex justify-content-center" style="margin-bottom: 12px;">
+                  <h3 class="text-danger">Khách hàng</h3>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <label>Người lớn</label>
+                    <input type="number" class="form-control" value="1" id="nguoi_lon">
+                  </div>
+                  <div class="col">
+                    <label>Trẻ em</label>
+                    <input type="number" class="form-control" value="0" id="tre_em">
+                  </div>
+                  <div class="col">
+                    <label>Số khách</label>
+                    <input type="text" class="form-control" value="1" id="tong_ng_di" readonly>
+                  </div>
+                  <div class="col">
+                      <label>Xử lý</label>
+                      <button type="button" class="form-control btn btn-primary" id="btn_khach_hang">Xác nhận</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 collapse form_list_customer">
+                <div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+                  <h3 class="text-danger">Danh sách khách hàng</h3>
+                </div>
+                <div class="card" id="list_customer_main">
+                  <!-- <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Khách hàng 1</li>
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col">
+                          <label>Họ tên</label>
+                          <input type="text" class="form-control" placeholder="Nhập họ tên">
+                        </div>
+                        <div class="col">
+                          <label>Số CMND</label>
+                          <input type="text" class="form-control" placeholder="Nhập số chứng minh">
+                        </div>
+                        <div class="col">
+                          <label>Địa chỉ</label>
+                          <input type="text" class="form-control" placeholder="Nhập địa chỉ">
+                        </div>
+                        <div class="col">
+                          <label>Số điện thoại</label>
+                          <input type="text" class="form-control" placeholder="Nhập số điện thoại">
+                        </div>
+                        <div class="col-3">
+                          <label>Ngày sinh</label>
+                          <div class="d-flex justify-content-end">
+                            <select class="form-control">
+                              <option value='0' selected='true'>Ngày</option>
+                              <option>2</option>
+                            </select>
+                            <select class="form-control">
+                              <option value='1' selected='true'>Tháng</option>
+                              <option>2</option>
+                            </select>
+                            <select class="form-control">
+                              <option value='1' selected='true'>Năm</option>
+                              <option>2</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="d-flex justify-content-end">Trị giá :&nbsp
+                        <label class="text-danger">2.399.000 VNĐ</label>
+                      </div>
+                    </li>
+                  </ul> -->
+                </div>
+              </div>
+              <div class="col-12" style="padding: 20px;">
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="btn btn-primary" id="btn_save_tour">Lưu thông tin</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- /.content-wrapper -->
+
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.0.5
+    </div>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="../../dist/js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="../../dist/js/handle.js"></script>
+</body>
+</html>
